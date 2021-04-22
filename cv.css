@@ -1,0 +1,35 @@
+h2{
+    color: #C5624C;
+}
+h1 {
+    text-align: center;
+}
+p,h2 {
+    font-family: 'MyWebFont',Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif ;
+}
+p,h2 {
+    @font-face{ 
+	font-family: 'MyWebFont';
+	src: url('fonts/WebFont.eot');
+	src: url('fonts/WebFont.eot?iefix') format('eot'),
+	     url('fonts/WebFont.woff') format('woff'),
+	     url('fonts/WebFont.ttf') format('truetype'),
+	     url('fonts/WebFont.svg#webfont') format('svg');
+}
+}
+
+body {
+    background-image: url("image/fond.png");
+    background-repeat: repeat;
+}
+
+.photoborder {
+    border: 2px rgba(34, 32, 32, 0.171) solid;
+    border-radius: 2px;
+    box-shadow: 3px 3px 2px #2b2a2a;
+    float: right; 
+}
+
+.stopperfloat {
+    clear: right;
+}
