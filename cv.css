@@ -1,35 +1,67 @@
-h2{
-    color: #C5624C;
-}
-h1 {
-    text-align: center;
-}
-p,h2 {
-    font-family: 'MyWebFont',Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif ;
-}
-p,h2 {
-    @font-face{ 
+
+@font-face{ 
 	font-family: 'MyWebFont';
 	src: url('fonts/WebFont.eot');
 	src: url('fonts/WebFont.eot?iefix') format('eot'),
 	     url('fonts/WebFont.woff') format('woff'),
 	     url('fonts/WebFont.ttf') format('truetype'),
 	     url('fonts/WebFont.svg#webfont') format('svg');
+    font-weight: normal;
+    font-style: normal;
 }
+h1,h2 {
+    font-family: 'MyWebFont',Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif ;
 }
+
+h2{
+    color: #C5624C;
+}
+h1, h1 + p {
+    text-align: center;
+
+p {
+    text-align: justify;
+}
+    
+
+}
+
 
 body {
     background-image: url("image/fond.png");
     background-repeat: repeat;
 }
-
-.photoborder {
+img {
+    float: right; 
     border: 2px rgba(34, 32, 32, 0.171) solid;
     border-radius: 2px;
-    box-shadow: 3px 3px 2px #2b2a2a;
-    float: right; 
+    box-shadow: 3px 3px 2px #2c2b2b;
+    
 }
-
-.stopperfloat {
-    clear: right;
+section {
+    display: inline-block;
+    vertical-align: top;
+    width: 25%;
+   margin-right: 2%;
+     
+  
+}
+#liseret, #contenu {
+    display: inline-block;
+    vertical-align: top;
+    
+  
+}
+#liseret {
+    width: 8%;
+    margin-right: 2%;
+    height: 600px;
+    border: #bd604bf3 0.5px solid;
+    border-radius: 4px;
+    color: #C5624C;
+    background-color: #bd604bf3;
+    opacity: 0.6; 
+}
+#contenu {
+    width: 80%;
 }
