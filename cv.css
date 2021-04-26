@@ -18,14 +18,11 @@ h2{
 }
 h1, h1 + p {
     text-align: center;
+}
 
 p {
     text-align: justify;
 }
-    
-
-}
-
 
 body {
     background-image: url("image/fond.png");
@@ -39,7 +36,7 @@ img {
     
 }
 section {
-    width: 35%;
+    width: 30%;
    margin-right: 3%;  
 }
 
@@ -65,3 +62,29 @@ section {
 #contenu {
     width: 85%;
 }
+/* responsive */
+
+ @media all and (max-width: 600px)
+ {
+    #contenu {
+        width: auto;
+    }
+
+    #liseret {
+        display: none;
+    }
+
+    #blocsection {
+        flex-direction: column;
+        
+    }
+     section {
+         width: auto;
+         margin-left: 2%;
+     }
+
+     img {
+         margin-right: 3%;
+
+     }
+ }
